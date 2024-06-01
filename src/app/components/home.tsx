@@ -47,104 +47,190 @@ export default function Empire() {
           </button>
         </div>
       </header>
+
       <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-6">
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="alternative1.png" alt="Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">ALTERNATIVE V4</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
+        <section className="col-span-1 sm:col-span-2 md:col-span-3">
+          <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* CS 1.6 Cheats */}
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="alternative1.png" alt="Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">ALTERNATIVE V4</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/evol2023.png" alt="Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">EVOL 2023</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="zeroware.png" alt="Cheat 3" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">ZEROWARE</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/evolv21.png" alt="Cheat 4" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">EVOL V21</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/aimware.png" alt="Cheat 5" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">AIMWARE</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/evolv23.png" alt="Cheat 6" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">EVOL V23</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="/evol2023.png" alt="Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">EVOL 2023</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
+        </section>
+
+        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-8">
+          <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* CS2 Cheats */}
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/cs2cheat1.png" alt="CS2 Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">CS2 Cheat 1</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/cs2cheat2.png" alt="CS2 Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">CS2 Cheat 2</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="zeroware.png" alt="Cheat 3" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">ZEROWARE</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
+        </section>
+
+        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-8">
+          <h2 className="text-3xl font-bold text-red-500 mb-6">GTA V Cheats</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* GTA V Cheats */}
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/gtavcheat1.png" alt="GTA V Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">GTA V Cheat 1</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+              <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+                <span className="sr-only">View</span>
+              </Link>
+              <img src="/gtavcheat2.png" alt="GTA V Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
+              <div className="bg-gray-900 p-4">
+                <h3 className="font-bold text-xl text-red-500">GTA V Cheat 2</h3>
+                <p className="text-sm text-gray-400">IDK</p>
+                <a
+                  href="#"
+                  className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Download
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="/evolv21.png" alt="Cheat 4" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">EVOL V21</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="/aimware.png" alt="Cheat 5" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">AIMWARE</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
-          </div>
-        </div>
-        <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-          <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-            <span className="sr-only">View</span>
-          </Link>
-          <img src="/evolv23.png" alt="Cheat 6" width={300} height={200} className="object-cover w-full h-48" />
-          <div className="bg-gray-900 p-4">
-            <h3 className="font-bold text-xl text-red-500">EVOL V23</h3>
-            <p className="text-sm text-gray-400">IDK</p>
-            <a
-              href="#"
-              className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-            >
-              Download
-            </a>
-          </div>
-        </div>
+        </section>
       </main>
+
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
         <p className="text-xs text-gray-400">
           &copy; 2023 ArabeCS. All rights reserved.
