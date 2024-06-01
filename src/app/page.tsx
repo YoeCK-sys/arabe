@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Empire() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-gray-950 text-white">
+    <div className="flex flex-col min-h-screen bg-gray-950 text-white overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-thumb-rounded-lg scrollbar-track-gray-950 scrollbar-track-rounded-lg">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <MountainIcon className="h-6 w-6 text-red-500" />
@@ -48,10 +48,10 @@ export default function Empire() {
         </div>
       </header>
 
-      <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-6">
-        <section className="col-span-1 sm:col-span-2 md:col-span-3">
+      <main className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
+        <section className="col-span-1 md:col-span-2 lg:col-span-3">
           <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* CS 1.6 Cheats */}
             {renderCheatCard("alternative1.png", "ALTERNATIVE V4", "Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.")}
             {renderCheatCard("/evol2023.png", "EVOL 2023", "EVOL 2023: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.")}
@@ -61,17 +61,17 @@ export default function Empire() {
             {renderCheatCard("/evolv23.png", "EVOL V23", "EVOL V23: Lleva tu experiencia de juego al siguiente nivel. Con herramientas de vanguardia, domina cada partida con facilidad.")}
           </div>
         </section>
-        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-10">
+        <section className="col-span-1 md:col-span-2 lg:col-span-3 mt-10">
           <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* CS GO Cheats */}
             {renderCheatCard("/aimstar.png", "AIMSTAR", "AIMSTAR: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
             {renderCheatCard("/trailer.png", "TEASER TRAILER", "TEASER TRAILER: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.")}
           </div>
         </section>
-        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-10">
+        <section className="col-span-1 md:col-span-2 lg:col-span-3 mt-10">
           <h2 className="text-3xl font-bold text-red-500 mb-6">GTA V Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* GTA V Cheats */}
             {renderCheatCard("/amnesia.png", "AIMNESIA", "AMNESIA: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
             {renderCheatCard("/recovery.png", "KIDDIONS", "KIDDIONS: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.")}
@@ -92,7 +92,7 @@ export default function Empire() {
 
 function renderCheatCard(imageSrc: string, title: string, description: string) {
   return (
-    <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 w-full max-w-xs md:max-w-sm flex flex-col">
+    <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 w-full flex flex-col">
       <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
         <span className="sr-only">View</span>
       </Link>
