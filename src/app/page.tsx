@@ -63,7 +63,7 @@ export default function Empire() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-950 text-white overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-thumb-rounded-lg scrollbar-track-gray-950 scrollbar-track-rounded-lg">
+    <div className="flex flex-col min-h-screen bg-gray-950 text-white">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <MountainIcon className="h-6 w-6 text-red-500" />
