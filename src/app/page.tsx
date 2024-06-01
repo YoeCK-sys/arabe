@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Empire() {
   const [section, setSection] = useState("home");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const renderContent = () => {
     if (section === "softwares") {
@@ -63,7 +64,7 @@ export default function Empire() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-950 text-white">
+    <div className="flex flex-col min-h-screen bg-gray-950 text-white overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-700 scrollbar-thumb-rounded-lg scrollbar-track-gray-950 scrollbar-track-rounded-lg">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
           <MountainIcon className="h-6 w-6 text-red-500" />
@@ -92,12 +93,47 @@ export default function Empire() {
           </nav>
         </div>
         <div className="sm:hidden">
-          <button className="rounded-full p-2">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full p-2">
             <MenuIcon className="h-6 w-6 text-red-500" />
             <span className="sr-only">Toggle menu</span>
           </button>
         </div>
       </header>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="sm:hidden bg-gray-950 absolute w-full transition-transform duration-300 ease-in-out">
+          <nav className="flex flex-col items-start p-4">
+            <button
+              onClick={() => {
+                setSection("home");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium mb-2 ${section === "home" ? "text-white" : "text-red-500"}`}
+            >
+              Home
+            </button>
+            <button
+              onClick={() => {
+                setSection("cheats");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium mb-2 ${section === "cheats" ? "text-white" : "text-red-500"}`}
+            >
+              Cheats
+            </button>
+            <button
+              onClick={() => {
+                setSection("softwares");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium ${section === "softwares" ? "text-white" : "text-red-500"}`}
+            >
+              Softwares
+            </button>
+          </nav>
+        </div>
+      )}
 
       <main className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
         {renderContent()}
