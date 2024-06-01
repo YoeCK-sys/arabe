@@ -160,9 +160,9 @@ export default function Empire() {
               <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                 <span className="sr-only">View</span>
               </Link>
-              <img src="/cs2cheat1.png" alt="CS2 Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
+              <img src="/trailer.png" alt="CS2 Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
-                <h3 className="font-bold text-xl text-red-500">CS2 Cheat 1</h3>
+                <h3 className="font-bold text-xl text-red-500">Teaser Trailer</h3>
                 <p className="text-sm text-gray-400">IDK</p>
                 <a
                   href="#"
@@ -176,9 +176,9 @@ export default function Empire() {
               <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                 <span className="sr-only">View</span>
               </Link>
-              <img src="/cs2cheat2.png" alt="CS2 Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
+              <img src="/aimstar.png" alt="CS2 Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
-                <h3 className="font-bold text-xl text-red-500">CS2 Cheat 2</h3>
+                <h3 className="font-bold text-xl text-red-500">Aimstar</h3>
                 <p className="text-sm text-gray-400">IDK</p>
                 <a
                   href="#"
@@ -199,9 +199,9 @@ export default function Empire() {
               <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                 <span className="sr-only">View</span>
               </Link>
-              <img src="/gtavcheat1.png" alt="GTA V Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
+              <img src="/amnesia.png" alt="GTA V Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
-                <h3 className="font-bold text-xl text-red-500">GTA V Cheat 1</h3>
+                <h3 className="font-bold text-xl text-red-500">Amnesia</h3>
                 <p className="text-sm text-gray-400">IDK</p>
                 <a
                   href="#"
@@ -215,9 +215,9 @@ export default function Empire() {
               <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                 <span className="sr-only">View</span>
               </Link>
-              <img src="/gtavcheat2.png" alt="GTA V Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
+              <img src="/recovery.png" alt="GTA V Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
-                <h3 className="font-bold text-xl text-red-500">GTA V Cheat 2</h3>
+                <h3 className="font-bold text-xl text-red-500">Recovery</h3>
                 <p className="text-sm text-gray-400">IDK</p>
                 <a
                   href="#"
