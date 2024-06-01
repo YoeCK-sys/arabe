@@ -65,7 +65,7 @@ export default function Empire() {
           <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* CS GO Cheats */}
-            {renderCheatCard("/Aimstar.png", "AIMSTAR", "AIMSTAR: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
+            {renderCheatCard("/aimstar.png", "AIMSTAR", "AIMSTAR: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
             {renderCheatCard("/trailer.png", "TEASER TRAILER", "TEASER TRAILER: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.")}
           </div>
         </section>
