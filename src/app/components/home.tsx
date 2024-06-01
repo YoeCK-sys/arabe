@@ -60,7 +60,7 @@ export default function Empire() {
               <img src="alternative1.png" alt="Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">ALTERNATIVE V4</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -76,7 +76,7 @@ export default function Empire() {
               <img src="/evol2023.png" alt="Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">EVOL 2023</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">EVOL 2023: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -92,7 +92,7 @@ export default function Empire() {
               <img src="zeroware.png" alt="Cheat 3" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">ZEROWARE</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">ZEROWARE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -108,7 +108,7 @@ export default function Empire() {
               <img src="/evolv21.png" alt="Cheat 4" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">EVOL V21</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">EVOL V21: Eleva tu juego con este cheat de última generación. Con características innovadoras, mejora tu precisión y estrategia en el campo de batalla.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -124,7 +124,7 @@ export default function Empire() {
               <img src="/aimware.png" alt="Cheat 5" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">AIMWARE</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">AIMWARE: El secreto mejor guardado de los jugadores profesionales. Con su tecnología avanzada Mejora tu puntería y velocidad.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -140,7 +140,7 @@ export default function Empire() {
               <img src="/evolv23.png" alt="Cheat 6" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">EVOL V23</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">EVOL V23: El aliado perfecto para tus hazañas en el juego. Con sus funciones de vanguardia, mejora tu rendimiento y desata tu potencial máximo. </p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -163,7 +163,7 @@ export default function Empire() {
               <img src="/trailer.png" alt="CS2 Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">Teaser Trailer</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">Teaser Trailer: Un vistazo emocionante a lo que está por venir. Prepárate para una experiencia épica con este adelanto lleno de acción. ¡No te pierdas ni un segundo de la emoción!</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -179,7 +179,7 @@ export default function Empire() {
               <img src="/aimstar.png" alt="CS2 Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">Aimstar</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">Aimstar: La elección de los verdaderos guerreros. Con su precisión incomparable y características avanzadas, este cheat te lleva a la cima del juego. ¡Descárgalo ahora y conviértete en una estrella del campo de batalla!</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -202,7 +202,7 @@ export default function Empire() {
               <img src="/amnesia.png" alt="GTA V Cheat 1" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">Amnesia</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <p className="text-sm text-gray-400">Amnesia: Desata el caos en las calles de Los Santos con este cheat de GTA V. Olvídate de las reglas y sumérgete en la acción sin límites. Con Amnesia, el poder está en tus manos. Descárgalo ahora.</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
@@ -217,8 +217,8 @@ export default function Empire() {
               </Link>
               <img src="/recovery.png" alt="GTA V Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
-                <h3 className="font-bold text-xl text-red-500">Recovery</h3>
-                <p className="text-sm text-gray-400">IDK</p>
+                <h3 className="font-bold text-xl text-red-500">KIDDIONS</h3>
+                <p className="text-sm text-gray-400">KIDDIONS: KIDDIONS: Tu aliado en Los Santos. Con características únicas, este cheat te ofrece el control total de GTA V. Descárgalo ahora y domina las calles de manera incomparable</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
