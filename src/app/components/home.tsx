@@ -218,7 +218,7 @@ export default function Empire() {
               <img src="/recovery.png" alt="GTA V Cheat 2" width={300} height={200} className="object-cover w-full h-48" />
               <div className="bg-gray-900 p-4">
                 <h3 className="font-bold text-xl text-red-500">KIDDIONS</h3>
-                <p className="text-sm text-gray-400">KIDDIONS: KIDDIONS: Tu aliado en Los Santos. Con características únicas, este cheat te ofrece el control total de GTA V. Descárgalo ahora y domina las calles de manera incomparable</p>
+                <p className="text-sm text-gray-400">KIDDIONS: Tu aliado en Los Santos. Con características únicas, este cheat te ofrece el control total de GTA V. Descárgalo ahora y domina las calles de manera incomparable, que nadie te detenga</p>
                 <a
                   href="#"
                   className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
