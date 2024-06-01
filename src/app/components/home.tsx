@@ -48,12 +48,12 @@ export default function Empire() {
         </div>
       </header>
 
-      <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-6">
-        <section className="col-span-1 sm:col-span-2 md:col-span-3">
-          <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {/* CS 1.6 Cheats */}
-            <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
+  <main className="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4 md:p-6">
+  <section className="col-span-1 sm:col-span-2 md:col-span-3">
+    <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {/* CS 1.6 Cheats */}
+      <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
               <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
                 <span className="sr-only">View</span>
               </Link>
