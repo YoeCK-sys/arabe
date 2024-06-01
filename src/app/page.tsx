@@ -53,101 +53,63 @@ export default function Empire() {
           <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* CS 1.6 Cheats */}
-            {[
-              { src: "alternative1.png", title: "ALTERNATIVE V4", description: "Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad." },
-              { src: "/evol2023.png", title: "EVOL 2023", description: "EVOL 2023: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad." },
-              { src: "zeroware.png", title: "ZEROWARE", description: "ZEROWARE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva." },
-              { src: "/evolv21.png", title: "EVOL V21", description: "EVOL V21: Eleva tu juego con este cheat de última generación. Con características innovadoras, mejora tu precisión y estrategia en el campo de batalla." },
-              { src: "/aimware.png", title: "AIMWARE", description: "AIMWARE: El secreto mejor guardado de los jugadores profesionales. Con su tecnología avanzada Mejora tu puntería y velocidad." },
-              { src: "/evolv23.png", title: "EVOL V23", description: "EVOL V23: El aliado perfecto para tus hazañas en el juego. Con sus funciones de vanguardia, mejora tu rendimiento y desata tu potencial máximo." }
-            ].map((cheat, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-                  <span className="sr-only">View</span>
-                </Link>
-                <img src={cheat.src} alt={cheat.title} className="object-cover w-full h-48" />
-                <div className="bg-gray-900 p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-bold text-xl text-red-500">{cheat.title}</h3>
-                    <p className="text-sm text-gray-400">{cheat.description}</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            ))}
+            {renderCheatCard("alternative1.png", "ALTERNATIVE V4", "Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.")}
+            {renderCheatCard("/evol2023.png", "EVOL 2023", "EVOL 2023: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.")}
+            {renderCheatCard("zeroware.png", "ZEROWARE", "ZEROWARE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.")}
+            {renderCheatCard("/evolv21.png", "EVOL V21", "EVOL V21: Eleva tu juego con este cheat de última generación. Con características innovadoras, mejora tu precisión y estrategia en el campo de batalla.")}
+            {renderCheatCard("/aimware.png", "AIMWARE", "AIMWARE: El secreto mejor guardado de los jugadores profesionales. Con su tecnología avanzada Mejora tu puntería y velocidad.")}
+            {renderCheatCard("/evolv23.png", "EVOL V23", "EVOL V23: Lleva tu experiencia de juego al siguiente nivel. Con herramientas de vanguardia, domina cada partida con facilidad.")}
           </div>
         </section>
-
-        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-8">
+        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-10">
           <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* CS2 Cheats */}
-            {[
-              { src: "/trailer.png", title: "Teaser Trailer", description: "Teaser Trailer: Un vistazo emocionante a lo que está por venir. Prepárate para una experiencia épica con este adelanto lleno de acción. ¡No te pierdas ni un segundo de la emoción!" },
-              { src: "/aimstar.png", title: "Aimstar", description: "Aimstar: La elección de los verdaderos guerreros. Con su precisión incomparable y características avanzadas, este cheat te lleva a la cima del juego. ¡Descárgalo ahora y conviértete en una estrella del campo de batalla!" }
-            ].map((cheat, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-                  <span className="sr-only">View</span>
-                </Link>
-                <img src={cheat.src} alt={cheat.title} className="object-cover w-full h-48" />
-                <div className="bg-gray-900 p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-bold text-xl text-red-500">{cheat.title}</h3>
-                    <p className="text-sm text-gray-400">{cheat.description}</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {/* CS GO Cheats */}
+            {renderCheatCard("/Aimstar.png", "AIMSTAR", "AIMSTAR: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
+            {renderCheatCard("/trailer.png", "TEASER TRAILER", "TEASER TRAILER: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.")}
           </div>
         </section>
-
-        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-8">
+        <section className="col-span-1 sm:col-span-2 md:col-span-3 mt-10">
           <h2 className="text-3xl font-bold text-red-500 mb-6">GTA V Cheats</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* GTA V Cheats */}
-            {[
-              { src: "/amnesia.png", title: "Amnesia", description: "Amnesia: Desata el caos en las calles de Los Santos con este cheat de GTA V. Olvídate de las reglas y sumérgete en la acción sin límites. Con Amnesia, el poder está en tus manos. Descárgalo ahora." },
-              { src: "/recovery.png", title: "KIDDIONS", description: "KIDDIONS: Tu aliado en Los Santos. Con características únicas, este cheat te ofrece el control total de GTA V. Descubre nuevas posibilidades y lleva tu juego al siguiente nivel." }
-            ].map((cheat, index) => (
-              <div key={index} className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2">
-                <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
-                  <span className="sr-only">View</span>
-                </Link>
-                <img src={cheat.src} alt={cheat.title} className="object-cover w-full h-48" />
-                <div className="bg-gray-900 p-4 h-full flex flex-col justify-between">
-                  <div>
-                    <h3 className="font-bold text-xl text-red-500">{cheat.title}</h3>
-                    <p className="text-sm text-gray-400">{cheat.description}</p>
-                  </div>
-                  <a
-                    href="#"
-                    className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50"
-                  >
-                    Download
-                  </a>
-                </div>
-              </div>
-            ))}
+            {renderCheatCard("/amnesia.png", "AIMNESIA", "AMNESIA: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.")}
+            {renderCheatCard("/recovery.png", "KIDDIONS", "KIDDIONS: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.")}
           </div>
         </section>
       </main>
+
+      <footer className="mt-auto py-4 border-t border-gray-800">
+        <div className="px-4 lg:px-6">
+          <p className="text-sm text-gray-400">
+            &copy; {new Date().getFullYear()} ARABECS. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
 
-
+function renderCheatCard(imageSrc: string, title: string, description: string) {
+  return (
+    <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 w-full max-w-xs md:max-w-sm flex flex-col">
+      <Link href="#" className="absolute inset-0 z-10" prefetch={false}>
+        <span className="sr-only">View</span>
+      </Link>
+      <img src={imageSrc} alt={title} className="object-cover w-full h-44" />
+      <div className="bg-gray-900 p-4 flex flex-col flex-1">
+        <h3 className="font-bold text-xl text-red-500">{title}</h3>
+        <p className="text-sm text-gray-400 flex-grow">{description}</p>
+        <a
+          href="#"
+          className="inline-flex h-8 items-center justify-center rounded-md border border-red-500 px-4 text-sm font-medium text-red-500 transition-colors hover:bg-red-500 hover:text-gray-950 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-950 disabled:pointer-events-none disabled:opacity-50 mt-auto"
+        >
+          Download
+        </a>
+      </div>
+    </div>
+  );
+}
 
 function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
