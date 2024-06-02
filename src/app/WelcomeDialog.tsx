@@ -12,7 +12,7 @@ export default function Dialog({ isVisible, onClose }: DialogProps) {
     // Oculta el componente después de cierto tiempo (opcional)
     const timeout = setTimeout(() => {
       onClose();
-    }, 5000); // Cambia este valor según tu necesidad
+    }, 99999999999); // Cambia este valor según tu necesidad
 
     return () => clearTimeout(timeout);
   }, [isVisible, onClose]);

@@ -17,7 +17,7 @@ export default function Empire() {
     // Oculta el componente después de cierto tiempo (opcional)
     const timeout = setTimeout(() => {
       setIsVisible(false);
-    }, 99999999999999); // Cambia este valor según tu necesidad
+    }, 5000); // Cambia este valor según tu necesidad
 
     return () => clearTimeout(timeout);
   }, []);
@@ -43,9 +43,8 @@ export default function Empire() {
     } else if (section === "cheats") {
       return (
         <>
-          <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
-  <h2 className="text-3xl font-bold text-red-500 mb-6">COUNTER-STRIKE 1.6</h2>
-
+          <section className="col-span-1 md:col-span-2 lg:col-span-3">
+            <h2 className="text-3xl font-bold text-red-500 mb-6">CS 1.6 Cheats</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderCheatCard("alternative1.png", "ALTERNATIVE V4", "Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.", "https://cuty.io/X5bMq")}
               {renderCheatCard("/evol2023.png", "EVOL 2023", "EVOL 2023: un cheat avanzado para potenciar tu juego. Con funciones únicas, mejora tu desempeño en el campo de batalla. Aumenta tu precisión y velocidad.", " https://linkgenie.me/s/Qe0A5")}
@@ -90,28 +89,24 @@ export default function Empire() {
               )}
             </div>
             {!showAllCheats && (
-  <div className="flex justify-center"> {/* Agregar contenedor flex alineado al centro */}
-    <button
-      onClick={() => setShowAllCheats(true)}
-      className="mt-4 text-red-500 hover:underline"
-      style={{ maxWidth: '200px' }} 
-    >
-      Ver más
-    </button>
-  </div>
-)}
-            
+              <button
+                onClick={() => setShowAllCheats(true)}
+                className="mt-4 text-red-500 hover:underline"
+              >
+                Ver más
+              </button>
+            )}
           </section>
-          <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
-  <h2 className="text-3xl font-bold text-red-500 mb-6">COUNTER-STRIKE 2</h2>
+          <section className="col-span-1 md:col-span-2 lg:col-span-3 mt-10">
+            <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderCheatCard("/aimstar.png", "AIMSTAR", "PASSWORD: ArabeCS", "https://cuty.io/PbsAQl")}
               {renderCheatCard("/detorus.png", "DETORUS", "PASSWORD: ArabeCS\nKEY: Detorus-media-2d-5CxztL6H12fKS0"
 , "https://cuty.io/psNUl2LqD")}
             </div>
           </section>
-          <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
-  <h2 className="text-3xl font-bold text-red-500 mb-6">GRAND THEFT AUTO V</h2>
+          <section className="col-span-1 md:col-span-2 lg:col-span-3 mt-10">
+            <h2 className="text-3xl font-bold text-red-500 mb-6">GTA V Cheats</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderCheatCard("/amnesia.png", "AIMNESIA", "AMNESIA: Desata el poder de la tormenta en tus partidas. Con características exclusivas, mejora tu rendimiento y precisión en el juego.", "https://cuty.io/buqMmZhE8aJp")}
               {renderCheatCard("/recovery.png", "KIDDIONS", "KIDDIONS: Consigue frags fácilmente con este cheat de última generación. Aumenta tu precisión y velocidad en cada partida.", "https://cuty.io/DMBfcywl")}
@@ -142,19 +137,19 @@ export default function Empire() {
               onClick={() => setSection("home")}
               className={`text-sm font-medium hover:underline underline-offset-4 ${section === "home" ? "text-white" : "text-red-500"}`}
             >
-              HOME
+              Home
             </button>
             <button
               onClick={() => setSection("cheats")}
               className={`text-sm font-medium hover:underline underline-offset-4 ${section === "cheats" ? "text-white" : "text-red-500"}`}
             >
-              CHEATS
+              Cheats
             </button>
             <button
               onClick={() => setSection("softwares")}
               className={`text-sm font-medium hover:underline underline-offset-4 ${section === "softwares" ? "text-white" : "text-red-500"}`}
             >
-              SOFTWARES
+              Softwares
             </button>
           </nav>
         </div>
