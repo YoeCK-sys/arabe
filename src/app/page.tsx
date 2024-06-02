@@ -14,9 +14,10 @@ export default function Empire() {
         <div className="col-span-1 md:col-span-2 lg:col-span-3">
           <h2 className="text-3xl font-bold text-red-500 mb-6">Softwares</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {renderSoftwareCard("software1.png", "Software 1", "Descripción del Software 1.", "https://acortarlink/software1")}
-            {renderSoftwareCard("software2.png", "Software 2", "Descripción del Software 2.", "https://acortarlink/software2")}
-            {renderSoftwareCard("software3.png", "Software 3", "Descripción del Software 3.", "https://acortarlink/software3")}
+            {renderSoftwareCard("sam.png", "Steam Achievement Manager", "Steam Achievement Manager (SAM): Desbloquea logros de cualquier juego de Steam al instante. Fácil, rápido¡Úsalo bajo tu responsabilidad!", "https://acortarlink/software1")}
+            {renderSoftwareCard("dlc.png", "Software 2", "DLC Unlocker: Desbloquea contenido descargable (DLC) de tus juegos sin pagar. Rápido y efectivo.", "https://acortarlink/software2")}
+            {renderSoftwareCard("id.png", "IdleMaster", "IdleMaster: Farmea cromos de Steam automáticamente mientras no estás jugando. Simple y efectivo, pero úsalo con precaución", "https://acortarlink/software3")}
+            
           </div>
         </div>
       );
@@ -80,7 +81,7 @@ export default function Empire() {
           <section className="col-span-1 md:col-span-2 lg:col-span-3 mt-10">
             <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {renderCheatCard("/aimstar.png", "AIMSTAR", "PASSWORD: ArabeCS", "https://acortarlink/aimstar")}
+              {renderCheatCard("/aimstar.png", "AIMSTAR", "PASSWORD: ArabeCS", "https://cuty.io/PbsAQl")}
               {renderCheatCard("/trailer.png", "DETORUS", "PASSWORD: ArabeCS\nKEY: Detorus-media-2d-5CxztL6H12fKS0"
 , "https://cuty.io/psNUl2LqD")}
             </div>
