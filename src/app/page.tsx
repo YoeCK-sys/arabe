@@ -1,22 +1,41 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import Dialog from "@/app/WelcomeDialog";
+
+
+
 
 export default function Empire() {
   const [section, setSection] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showAllCheats, setShowAllCheats] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    // Oculta el componente después de cierto tiempo (opcional)
+    const timeout = setTimeout(() => {
+      setIsVisible(false);
+    }, 5000); // Cambia este valor según tu necesidad
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  const handleClose = () => {
+    setIsVisible(false);
+  };
 
   const renderContent = () => {
     if (section === "softwares") {
       return (
+
         <div className="col-span-1 md:col-span-2 lg:col-span-3">
           <h2 className="text-3xl font-bold text-red-500 mb-6">Softwares</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {renderSoftwareCard("sam.png", "Steam Achievement Manager", "Steam Achievement Manager (SAM): Desbloquea logros de cualquier juego de Steam al instante. Fácil, rápido¡Úsalo bajo tu responsabilidad!", "https://acortarlink/software1")}
-            {renderSoftwareCard("dlc.png", "Software 2", "DLC Unlocker: Desbloquea contenido descargable (DLC) de tus juegos sin pagar. Rápido y efectivo.", "https://acortarlink/software2")}
-            {renderSoftwareCard("id.png", "IdleMaster", "IdleMaster: Farmea cromos de Steam automáticamente mientras no estás jugando. Simple y efectivo, pero úsalo con precaución", "https://acortarlink/software3")}
+            {renderSoftwareCard("sam.png", "Steam Achievement Manager", "Steam Achievement Manager (SAM): Desbloquea logros de cualquier juego de Steam al instante. Fácil, rápido¡Úsalo bajo tu responsabilidad!", "https://cuty.io/h7WUtsL")}
+            {renderSoftwareCard("dlc.png", "DLC Unlocker", "DLC Unlocker: Desbloquea contenido descargable (DLC) de tus juegos sin pagar. Rápido y efectivo.", "https://cuty.io/IOUcZwf")}
+            {renderSoftwareCard("id.png", "IdleMaster", "IdleMaster: Farmea cromos de Steam automáticamente mientras no estás jugando. Simple y efectivo, pero úsalo con precaución", "https://cuty.io/H8A6gk2d9ZS")}
             
           </div>
         </div>
@@ -82,7 +101,7 @@ export default function Empire() {
             <h2 className="text-3xl font-bold text-red-500 mb-6">CS2 Cheats</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderCheatCard("/aimstar.png", "AIMSTAR", "PASSWORD: ArabeCS", "https://cuty.io/PbsAQl")}
-              {renderCheatCard("/trailer.png", "DETORUS", "PASSWORD: ArabeCS\nKEY: Detorus-media-2d-5CxztL6H12fKS0"
+              {renderCheatCard("/detorus.png", "DETORUS", "PASSWORD: ArabeCS\nKEY: Detorus-media-2d-5CxztL6H12fKS0"
 , "https://cuty.io/psNUl2LqD")}
             </div>
           </section>
@@ -179,6 +198,7 @@ export default function Empire() {
       <main className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
         {renderContent()}
       </main>
+      {isVisible && <Dialog isVisible={isVisible} onClose={handleClose} />}
 
       <footer className="mt-auto py-4 border-t border-gray-800">
         <div className="text-center text-sm text-gray-400">
