@@ -5,15 +5,19 @@ import { useState } from "react";
 
 export default function Empire() {
   const [section, setSection] = useState("home");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const renderContent = () => {
     if (section === "softwares") {
       return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Softwares */}
-          {renderSoftwareCard("aim.png", "Software 1", "Descripción del Software 1.")}
-          {renderSoftwareCard("software2.png", "Software 2", "Descripción del Software 2.")}
-          {renderSoftwareCard("software3.png", "Software 3", "Descripción del Software 3.")}
+        <div className="col-span-1 md:col-span-2 lg:col-span-3">
+          <h2 className="text-3xl font-bold text-red-500 mb-6">Softwares</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Softwares */}
+            {renderSoftwareCard("software1.png", "Software 1", "Descripción del Software 1.")}
+            {renderSoftwareCard("software2.png", "Software 2", "Descripción del Software 2.")}
+            {renderSoftwareCard("software3.png", "Software 3", "Descripción del Software 3.")}
+          </div>
         </div>
       );
     } else if (section === "cheats") {
@@ -28,6 +32,7 @@ export default function Empire() {
               {renderCheatCard("zeroware.png", "ZEROWARE", "ZEROWARE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.")}
               {renderCheatCard("/evolv21.png", "EVOL V21", "EVOL V21: Eleva tu juego con este cheat de última generación. Con características innovadoras, mejora tu precisión y estrategia en el campo de batalla.")}
               {renderCheatCard("/aimware.png", "AIMWARE", "AIMWARE: El secreto mejor guardado de los jugadores profesionales. Con su tecnología avanzada Mejora tu puntería y velocidad.")}
+              {renderCheatCard("/evolv23.png", "EVOL V23", "EVOL V23: Lleva tu experiencia de juego al siguiente nivel. Con herramientas de vanguardia, domina cada partida con facilidad.")}
               {renderCheatCard("/evolv23.png", "EVOL V23", "EVOL V23: Lleva tu experiencia de juego al siguiente nivel. Con herramientas de vanguardia, domina cada partida con facilidad.")}
             </div>
           </section>
@@ -51,7 +56,7 @@ export default function Empire() {
       );
     } else {
       return (
-        <div className="text-center">
+        <div className="flex items-center justify-center flex-col h-full">
           <h2 className="text-4xl font-bold text-red-500 mb-6">Welcome to ARABECS</h2>
           <p className="text-xl text-gray-400">Explore our cheats and software to enhance your gaming experience.</p>
         </div>
@@ -89,12 +94,47 @@ export default function Empire() {
           </nav>
         </div>
         <div className="sm:hidden">
-          <button className="rounded-full p-2">
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full p-2">
             <MenuIcon className="h-6 w-6 text-red-500" />
             <span className="sr-only">Toggle menu</span>
           </button>
         </div>
       </header>
+
+      {/* Mobile menu */}
+      {mobileMenuOpen && (
+        <div className="sm:hidden bg-gray-950 absolute w-full transition-transform duration-300 ease-in-out">
+          <nav className="flex flex-col items-start p-4">
+            <button
+              onClick={() => {
+                setSection("home");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium mb-2 ${section === "home" ? "text-white" : "text-red-500"}`}
+            >
+              Home
+            </button>
+            <button
+              onClick={() => {
+                setSection("cheats");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium mb-2 ${section === "cheats" ? "text-white" : "text-red-500"}`}
+            >
+              Cheats
+            </button>
+            <button
+              onClick={() => {
+                setSection("softwares");
+                setMobileMenuOpen(false);
+              }}
+              className={`text-sm font-medium ${section === "softwares" ? "text-white" : "text-red-500"}`}
+            >
+              Softwares
+            </button>
+          </nav>
+        </div>
+      )}
 
       <main className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-6">
         {renderContent()}
@@ -186,3 +226,4 @@ function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+  
