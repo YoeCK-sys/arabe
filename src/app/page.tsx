@@ -30,8 +30,8 @@ export default function Empire() {
     if (section === "softwares") {
       return (
 
-        <div className="col-span-1 md:col-span-2 lg:col-span-3">
-          <h2 className="text-3xl font-bold text-red-500 mb-6">Softwares</h2>
+        <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
+  <h2 className="text-3xl font-bold text-red-500 mb-6">SOFTWARES</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {renderSoftwareCard("sam.png", "Steam Achievement Manager", "Steam Achievement Manager (SAM): Desbloquea logros de cualquier juego de Steam al instante. Fácil, rápido¡Úsalo bajo tu responsabilidad!", "https://cuty.io/h7WUtsL")}
             {renderSoftwareCard("dlc.png", "DLC Unlocker", "DLC Unlocker: Desbloquea contenido descargable (DLC) de tus juegos sin pagar. Rápido y efectivo.", "https://cuty.io/IOUcZwf")}
