@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "CS1.6 DOWNLOAD CHEATS",
     images: [
       {
-        url: "/logoback.png",
+        url: "/logo.png",
         width: 800,
         height: 600,
         alt: "ArabeCS Logo",
@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <meta property="og:title" content="ArabeCS Downloads" />
         <meta property="og:description" content="CS1.6 DOWNLOAD CHEATS" />
-        <meta property="og:image" content="/logoback.png" />
+        <meta property="og:image" content="/logo.png" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
       </head>
