@@ -17,6 +17,9 @@ export default function Dialog({ isVisible, onClose }: DialogProps) {
     return () => clearTimeout(timeout);
   }, [isVisible, onClose]);
 
+  // Enlace de invitación al servidor de Discord
+  const discordInvitationLink = "https://dsc.gg/ArabeCS";
+
   return (
     <>
       {isVisible && (
@@ -46,7 +49,7 @@ export default function Dialog({ isVisible, onClose }: DialogProps) {
                 Promoción: Generador de cuentas permanente por $5 USD
               </button>
               <a
-                href="#"
+                href={discordInvitationLink} // Aquí se actualiza el enlace
                 target="_blank"
                 className="inline-flex h-10 items-center justify-center rounded-md bg-red-600 hover:bg-red-700 px-6 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-800 disabled:pointer-events-none disabled:opacity-50"
               >
