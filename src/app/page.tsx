@@ -7,6 +7,7 @@ import Dialog from "@/app/WelcomeDialog";
 
 
 
+
 export default function Empire() {
   const [section, setSection] = useState("home");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -121,9 +122,12 @@ export default function Empire() {
       );
     } else {
       return (
-        <div className="flex items-center justify-center flex-col h-full">
-          <h2 className="text-4xl font-bold text-red-500 mb-6">Welcome to ARABECS</h2>
-          <p className="text-xl text-gray-400">Explore our cheats and software to enhance your gaming experience.</p>
+        <div className="flex flex-col md:flex-row items-center justify-between w-full h-full px-4">
+          <div className="flex flex-col">
+            <h2 className="text-4xl font-bold text-red-500 mb-6">Welcome to ARABECS</h2>
+            <p className="text-xl text-gray-400 mb-6">Explore our cheats and software to enhance your gaming experience.</p>
+          </div>
+          <img src="portada.jpg" className="mt-6 md:mt-0 md:ml-60" style={{ maxWidth: "200%", maxHeight: "100%" }} />
         </div>
       );
     }
@@ -133,8 +137,8 @@ export default function Empire() {
     <div className="flex flex-col min-h-screen bg-gray-950 text-white">
       <header className="px-4 lg:px-6 h-14 flex items-center justify-between">
         <Link href="#" className="flex items-center" prefetch={false}>
-          <MountainIcon className="h-6 w-6 text-red-500" />
-          <span className="font-bold text-2xl text-red-500">ARABECS</span>
+        <img src="logo.png" className="h-6 w-6 text-red-500 rounded-full scale-150 pointer-events-none" />
+          <span className="font-bold text-2xl text-red-500 ml-3 my-">ARABECS</span>
         </Link>
         <div className="hidden sm:block">
           <nav className="flex gap-4 sm:gap-6">
