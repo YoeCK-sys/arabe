@@ -124,10 +124,10 @@ export default function Empire() {
       return (
         <div className="flex flex-col md:flex-row items-center justify-between w-full h-full px-4">
           <div className="flex flex-col">
-            <h2 className="text-4xl font-bold text-red-500 mb-6">Welcome to ARABECS</h2>
-            <p className="text-xl text-gray-400 mb-6">Explore our cheats and software to enhance your gaming experience.</p>
+            <h2 className="text-4xl font-bold text-red-500 mb-6 text-center md:text-left">Welcome to ARABECS</h2>
+            <p className="text-xl text-gray-400 mb-6 text-center md:text-left">Explore our cheats and software to enhance your gaming experience.</p>
           </div>
-          <img src="portada.jpg" className="mt-6 md:mt-0 md:ml-60" style={{ maxWidth: "200%", maxHeight: "100%" }} />
+          <img src="portada.jpg" className="mt-6 md:mt-0 md:ml-6 w-full md:w-auto" style={{ maxWidth: "200%", maxHeight: "100%" }} />
         </div>
       );
     }
