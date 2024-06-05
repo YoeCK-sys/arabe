@@ -24,16 +24,9 @@ export default function Empire() {
   };
 
   const renderContent = () => {
-    if (section === "home") {
+    if (section === "softwares") {
       return (
-        <div className="flex items-center justify-center flex-col h-full">
-          <h2 className="text-4xl font-bold text-red-500 mb-6">Welcome to ARABECS</h2>
-          <p className="text-xl text-gray-400">Explore our cheats and software to enhance your gaming experience.</p>
-        </div>
-      );
-    } else if (section === "softwares") {
-      return (
-        <div className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
+        <div className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center">
           <h2 className="text-3xl font-bold text-red-500 mb-6">SOFTWARES</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {renderSoftwareCard("sam.png", "Steam Achievement Manager", "Steam Achievement Manager (SAM): Desbloquea logros de cualquier juego de Steam al instante. Fácil, rápido¡Úsalo bajo tu responsabilidad!", "https://cuty.io/h7WUtsL")}
@@ -45,7 +38,7 @@ export default function Empire() {
     } else if (section === "cheats") {
       return (
         <>
-          <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center"> {/* Cambiamos justify-center por items-center y agregamos flex-col */}
+          <section className="col-span-1 md:col-span-2 lg:col-span-3 flex flex-col items-center">
             <h2 className="text-3xl font-bold text-red-500 mb-6">COUNTER-STRIKE 1.6</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {renderCheatCard("alternative1.png", "ALTERNATIVE V4", "Alternative V4: un cheat avanzado para mejorar tu juego. Con características únicas, te ofrece ventajas en el campo de batalla. Mejora tu precisión y velocidad.", "https://cuty.io/X5bMq")}
@@ -71,78 +64,91 @@ export default function Empire() {
                   {renderCheatCard("/crystal.png", "CRYSTAL VISUAL", "CRYSTAL VISUAL: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/LrDHZ")}
                   {renderCheatCard("/sakura2023.png", "SAKURA 2023", "SAKURA 2023: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/YVPXJ0us")}
                   {renderCheatCard("/kzcheats.png", "XASK KZ", "XASK KZ: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/cKxy7IrGQ3dq")}
-                  {renderCheatCard("/sakura2022.png", "SAKURA 2022", "SAKURA 2022: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", "https://cuty.io/Zo7Jt")}
-                  {renderCheatCard("/aadvantage.png", "ADVANTAGE TOOL", "ADVANTAGE TOOL: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/ItV0G")}
-                  {renderCheatCard("/evolorange.png", "EVOL ORANGE", "EVOL ORANGE: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/tiEd")}
-                  {renderCheatCard("/nvidia.png", "NVIDIA SETTINGS", "NVIDIA SETTINGS: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/6HbwRBFkVJ2U")}
+                  {renderCheatCard("/sakura2022.png", "SAKURA 2022", "SAKURA 2022: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", " https://cuty.io/k42Gf2")}
+                  {renderCheatCard("/hppv6.png", "HPP V6 STEAM (FINAL VERSION)", "HPP V6 STEAM: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", "https://cuty.io/9uHyn")}
+                  {renderCheatCard("/zero.png", "ZEROWARE STEAM (FINAL VERSION)", "ZEROWARE STEAM: Potencia tu juego al máximo. Con características exclusivas, este cheat te brinda una ventaja competitiva.", "https://cuty.io/wOkLEAzp")}
                 </>
               )}
             </div>
             {!showAllCheats && (
               <button
-                className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
                 onClick={() => setShowAllCheats(true)}
+                className="mt-4 bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
               >
-                Show More
+                Ver más cheats
               </button>
             )}
           </section>
         </>
       );
     }
+    // Resto del contenido...
     return null;
   };
 
-  const renderSoftwareCard = (imageSrc, title, description, link) => (
-    <div className="border p-4 rounded-lg shadow-md bg-black">
-      <img src={imageSrc} alt={title} className="w-full h-32 object-cover mb-4 rounded-md" />
-      <h3 className="text-xl font-bold text-red-500 mb-2">{title}</h3>
-      <p className="text-gray-400 mb-4">{description}</p>
-      <a href={link} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Download</a>
+  const renderCheatCard = (imgSrc, title, description, link) => (
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between">
+      <div>
+        <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
+        <div className="p-4">
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
+          <p className="text-gray-700 text-base">{description}</p>
+        </div>
+      </div>
+      <div className="p-4">
+        <Link href={link} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block text-center">
+          DESCARGAR
+        </Link>
+      </div>
     </div>
   );
 
-  const renderCheatCard = (imageSrc, title, description, link) => (
-    <div className="border p-4 rounded-lg shadow-md bg-black">
-      <img src={imageSrc} alt={title} className="w-full h-32 object-cover mb-4 rounded-md" />
-      <h3 className="text-xl font-bold text-red-500 mb-2">{title}</h3>
-      <p className="text-gray-400 mb-4">{description}</p>
-      <a href={link} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Download</a>
+  const renderSoftwareCard = (imgSrc, title, description, link) => (
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col justify-between">
+      <div>
+        <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
+        <div className="p-4">
+          <h3 className="text-xl font-semibold mb-2">{title}</h3>
+          <p className="text-gray-700 text-base">{description}</p>
+        </div>
+      </div>
+      <div className="p-4">
+        <Link href={link} className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded block text-center">
+          DESCARGAR
+        </Link>
+      </div>
     </div>
   );
 
   return (
     <>
       {isVisible && <Dialog onClose={handleClose} />}
-      <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col">
-        <header className="flex justify-between items-center mb-8">
-          <Link href="/">
-            <a className="text-2xl font-bold text-red-500">ARABECS</a>
-          </Link>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>
-                <button onClick={() => setSection("home")} className="text-white hover:text-red-500">Home</button>
-              </li>
-              <li>
-                <button onClick={() => setSection("softwares")} className="text-white hover:text-red-500">Softwares</button>
-              </li>
-              <li>
-                <button onClick={() => setSection("cheats")} className="text-white hover:text-red-500">Cheats</button>
-              </li>
-            </ul>
+      <header className="bg-gray-800 text-white p-4">
+        <div className="container mx-auto flex justify-between items-center">
+          <h1 className="text-3xl font-bold">Empire Cheats</h1>
+          <nav className="hidden md:flex space-x-4">
+            <button onClick={() => setSection("home")} className="hover:text-red-500">Home</button>
+            <button onClick={() => setSection("softwares")} className="hover:text-red-500">Softwares</button>
+            <button onClick={() => setSection("cheats")} className="hover:text-red-500">Cheats</button>
           </nav>
-          <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             Menu
           </button>
-        </header>
-        <main className="flex-grow">
-          {renderContent()}
-        </main>
-        <footer className="py-4 text-center text-white">
-          © 2023 ARABECS. All rights reserved.
-        </footer>
-      </div>
+        </div>
+        {mobileMenuOpen && (
+          <nav className="md:hidden bg-gray-700 p-4">
+            <button onClick={() => setSection("home")} className="block text-white py-2">Home</button>
+            <button onClick={() => setSection("softwares")} className="block text-white py-2">Softwares</button>
+            <button onClick={() => setSection("cheats")} className="block text-white py-2">Cheats</button>
+          </nav>
+        )}
+      </header>
+      <main className="container mx-auto py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {renderContent()}
+      </main>
+      <footer className="bg-gray-800 text-white p-4 text-center">
+        &copy; 2023 Empire Cheats. Todos los derechos reservados.
+      </footer>
     </>
   );
 }
